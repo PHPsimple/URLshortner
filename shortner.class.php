@@ -32,10 +32,8 @@
             */
             if($this->db_connect())
             {
-                echo "Database connected <br />";
                 if(isset($_POST['new_url'])) {
                     $this->newURL();
-                    echo "Inserting <br />";
                 }
 
                 if($this->URLcheck()) { $this->URLredirect(); }
